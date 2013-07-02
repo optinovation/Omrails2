@@ -33,7 +33,8 @@ Omrails::Application.configure do
   config.assets.compress = false
 
   # Expands the lines which load the assets
-  config.assets.debug = true
+  # Modifed from true to false as it kept showing css errors on server side 
+  config.assets.debug = false
 
   # In production, :host should be set to the actual host of your application.
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
